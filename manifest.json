@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "genjify",
+    "version": "1.0.0",
+    "description": "genjify your screen!",
+    "permissions": ["tabs", "activeTab"],
+    "icons": {
+        "16": "images/amongus16.png",
+        "48": "images/amongus48.png",
+        "128": "images/amongus128.png"
+    },
+    "content_scripts": [
+        {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "genjify"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["images/genji0.jpg","images/genji1.jpg","images/genji2.jpg","images/genji3.jpg","images/genji4.jpg","images/genji5.jpg","images/genji6.jpg",
+                          "images/genji7.jpg","images/genji8.jpg","images/genji9.jpg","images/genji10.jpg","images/genji11.jpg","images/genji12.jpg","images/genji13.jpg"],
+            "matches": ["<all_urls>"]
+        }
+] 
+}
